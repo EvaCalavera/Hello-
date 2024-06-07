@@ -4,48 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eva Calavera - Second Life Builder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
             color: #333;
         }
         header {
-            background-color: #333;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #fff;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        header h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
         }
         .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
-        h1, h2 {
-            color: #333;
+        .section {
+            margin-bottom: 40px;
         }
-        .bio, .experience, .portfolio, .contact {
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
             margin-bottom: 20px;
         }
-        .bio p, .experience ul, .portfolio p, .contact p {
+        p {
             line-height: 1.6;
-        }
-        .experience ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .experience ul li {
-            background: #e4e4e4;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
+            margin-bottom: 20px;
         }
         .portfolio p {
-            margin: 10px 0;
+            font-weight: 700;
         }
         .contact a {
             color: #007BFF;
@@ -55,11 +60,10 @@
             text-decoration: underline;
         }
         footer {
-            background-color: #333;
-            color: white;
             text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-top: 1px solid #e5e5e5;
         }
     </style>
 </head>
@@ -67,37 +71,40 @@
 
 <header>
     <h1>Eva Calavera</h1>
-    <p>Second Life Builder</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
 <div class="container">
-    <section class="bio">
+    <section id="about" class="section">
         <h2>About Me</h2>
         <p>Hello! My name is Eva Calavera, and I am a dedicated and passionate builder in Second Life with over five years of experience. I specialize in creating immersive and intricate builds for a variety of purposes.</p>
     </section>
 
-    <section class="experience">
+    <section id="experience" class="section">
         <h2>My Experience</h2>
-        <ul>
-            <li>Five Years of Building Experience: Continuously learning and improving my skills.</li>
-            <li>Roleplay Sims: Extensive experience in creating both public and private RP sims.</li>
-            <li>Private Homes & Homesteads: Custom-designed homesteads and private residences.</li>
-            <li>Stores & Commercial Spaces: Tailored store builds to suit your business needs.</li>
-            <li>Backdrops for Photos: Unique backdrops for photographers and content creators.</li>
-            <li>Collaborations with Experienced Builders: Worked on significant projects alongside seasoned builders.</li>
-        </ul>
+        <p>Five Years of Building Experience: Continuously learning and improving my skills.</p>
+        <p>Roleplay Sims: Extensive experience in creating both public and private RP sims.</p>
+        <p>Private Homes & Homesteads: Custom-designed homesteads and private residences.</p>
+        <p>Stores & Commercial Spaces: Tailored store builds to suit your business needs.</p>
+        <p>Backdrops for Photos: Unique backdrops for photographers and content creators.</p>
+        <p>Collaborations with Experienced Builders: Worked on significant projects alongside seasoned builders.</p>
     </section>
 
-    <section class="portfolio">
+    <section id="portfolio" class="section">
         <h2>Project Portfolio</h2>
-        <p><strong>Quarter Sim Projects:</strong> L$7500</p>
-        <p><strong>Store Builds:</strong> Starting at L$5000 (price varies based on store size)</p>
-        <p><strong>Private Homesteads:</strong> L$10,000 for a homestead with 5000 prims</p>
-        <p><strong>Full Sim Builds:</strong> L$25,000</p>
-        <p><strong>Small Homes or Parcels:</strong> Prices are negotiable for projects smaller than 1/4 sim</p>
+        <p>Quarter Sim Projects: L$7500</p>
+        <p>Store Builds: Starting at L$5000 (price varies based on store size)</p>
+        <p>Private Homesteads: L$10,000 for a homestead with 5000 prims</p>
+        <p>Full Sim Builds: L$25,000</p>
+        <p>Small Homes or Parcels: Prices are negotiable for projects smaller than 1/4 sim</p>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="section">
         <h2>Contact Me</h2>
         <p>For inquiries and quotations, please reach out to me in-world. Let's bring your vision to life with a build that exceeds your expectations!</p>
         <p><a href="https://linktr.ee/eva.calavera" target="_blank">https://linktr.ee/eva.calavera</a></p>
